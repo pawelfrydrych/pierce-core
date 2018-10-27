@@ -102,6 +102,8 @@ public class BlogTestIntegr {
 		assertEquals(post.getId(), updatedPost.getId());
 		assertNotEquals(post.getTitle(), updatedPost.getTitle());
 		assertNotEquals(post.getContent() , updatedPost.getContent());
+
+		updatePost(new ModelMapper().map(post, PostDto.class));
 	}
 
 
