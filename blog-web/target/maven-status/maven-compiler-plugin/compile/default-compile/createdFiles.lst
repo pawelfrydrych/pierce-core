@@ -1,0 +1,4 @@
+com\pierceecom\blog\config\JAXRSConfiguration.class
+com\pierceecom\blog\controllers\HelloPierceResource.class
+com\pierceecom\blog\controllers\PostController.class
+com\pierceecom\blog\services\PostService.class
