@@ -57,11 +57,15 @@ public class PostService {
 
 	public Response deletePost(Long id) {
 		if (!posts.containsKey(id)) {
-			return Response.status(404).type("application/json").entity(buildErrorResponse(404)).build();
+			return Response.status(404)
+					.type("application/json")
+					.entity(buildErrorResponse(404)).build();
 		}
 
 		posts.remove(id);
-		return Response.ok(posts).status(200).build();
+		return Response.ok(posts)
+				.status(200)
+				.build();
 	}
 
 	private static String buildErrorResponse(int code) {

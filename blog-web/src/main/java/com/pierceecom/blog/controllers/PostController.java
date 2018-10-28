@@ -43,6 +43,8 @@ public class PostController {
 
 	@DELETE
 	@Path("/{postId}")
+	@Produces(MediaType.APPLICATION_JSON)
+	@Consumes(MediaType.APPLICATION_JSON)
 	public Response deletePost(@PathParam("postId") Long postId) {
 		return postService.deletePost(postId);
 	}
