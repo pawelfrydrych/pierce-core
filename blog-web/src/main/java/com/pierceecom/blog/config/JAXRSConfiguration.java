@@ -2,7 +2,6 @@ package com.pierceecom.blog.config;
 
 import com.pierceecom.blog.controllers.HelloPierceResource;
 import com.pierceecom.blog.controllers.PostController;
-import com.pierceecom.blog.services.PostService;
 
 import java.util.HashSet;
 import java.util.Set;
