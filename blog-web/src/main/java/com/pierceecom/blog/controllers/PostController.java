@@ -28,7 +28,6 @@ public class PostController {
 	}
 
 	@POST
-	@Produces(MediaType.APPLICATION_JSON)
 	@Consumes(MediaType.APPLICATION_JSON)
 	public Response createPost(PostCommand postCommand){
 		return postService.createPost(postCommand);
